@@ -1,0 +1,1 @@
+# as-props-polymorphic-component
