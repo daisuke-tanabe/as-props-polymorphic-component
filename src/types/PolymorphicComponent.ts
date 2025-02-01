@@ -3,7 +3,8 @@ import { ComponentPropsWithoutRef, ComponentPropsWithRef, ElementType, JSX, JSXE
 export type PropsOf<Component extends keyof JSX.IntrinsicElements | JSXElementConstructor<unknown>> =
   JSX.LibraryManagedAttributes<Component, ComponentPropsWithoutRef<Component>>;
 
-export type ExtendableProps<BaseProps = object, OverrideProps = object> = OverrideProps & Omit<BaseProps, keyof OverrideProps>;
+export type ExtendableProps<BaseProps = object, OverrideProps = object> = OverrideProps &
+  Omit<BaseProps, keyof OverrideProps>;
 
 export type PolymorphicRef<T extends ElementType> = ComponentPropsWithRef<T>['ref'];
 

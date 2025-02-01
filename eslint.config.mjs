@@ -1,7 +1,7 @@
 import eslint from '@eslint/js';
 import eslintConfigPrettier from 'eslint-config-prettier';
 import tseslint from 'typescript-eslint';
-import reactRefresh from "eslint-plugin-react-refresh";
+import reactRefresh from 'eslint-plugin-react-refresh';
 
 import globals from 'globals';
 
@@ -27,11 +27,8 @@ export default tseslint.config(
       },
     },
     rules: {
-      'react-refresh/only-export-components': [
-        'warn',
-        { allowConstantExport: true },
-      ],
-    }
+      'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
+    },
   },
 
   {
